@@ -113,7 +113,244 @@ body {
     </script>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-xs font-medium text-slate-400">
+            <li><a href="#" class="hover:text-[#0D9488] transition-colors">Inicio</a></li>
+            <li aria-hidden="true">/</li>
+            <li class="text-slate-600 truncate">Modelos de IA</li>
+        </ol>
+    </nav>
+
+    <!-- ========== Identidad ========== -->
+    <div class="mt-4 flex flex-col gap-4 border-b border-slate-200 pb-5 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+            <h1 class="text-3xl lg:text-4xl font-semibold text-slate-900 tracking-tight leading-tight">
+                Modelos de IA
+            </h1>
+            <div class="mt-2.5 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-slate-500">
+                <span class="font-medium text-slate-700">Leaderboard LMArena</span>
+                <span class="text-slate-300" aria-hidden="true">/</span>
+                <span class="tabular-nums">100 modelos</span>
+                <span class="px-1.5 py-0.5 bg-[#CCFBF1] text-[#0F766E] text-xs font-semibold rounded-sm">Categoría overall</span>
+            </div>
+        </div>
+        <p class="max-w-md text-sm text-slate-500 leading-relaxed">
+            Fichas individuales de cada modelo: posición, Arena Score, licencia, rendimiento por categoría y trayectoria histórica.
+        </p>
+    </div>
+
+    <!-- ========== Listado de modelos (sitemap) ========== -->
+    <section class="mt-6">
+        <div class="border border-slate-200 rounded-md overflow-hidden divide-y divide-slate-200 bg-white">
+            <!-- Familia: Amazon -->
+            <div>
+                <div class="flex items-baseline justify-between gap-4 bg-slate-50 px-4 py-3">
+                    <h2 class="text-base font-semibold text-slate-900 tracking-tight">Amazon</h2>
+                    <span class="text-xs font-medium text-slate-400 tabular-nums">4 modelos</span>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 px-4 py-4">
+                        <li><a href="https://buscohosting.com/modelo/amazon-nova-experimental-chat-11-10" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">amazon-nova-experimental-chat-11-10</a></li>
+                        <li><a href="https://buscohosting.com/modelo/amazon-nova-experimental-chat-12-10" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">amazon-nova-experimental-chat-12-10</a></li>
+                        <li><a href="https://buscohosting.com/modelo/amazon-nova-experimental-chat-26-01-10" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">amazon-nova-experimental-chat-26-01-10</a></li>
+                        <li><a href="https://buscohosting.com/modelo/amazon-nova-experimental-chat-26-02-10" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">amazon-nova-experimental-chat-26-02-10</a></li>
+                </ul>
+            </div>
+            <!-- Familia: ChatGPT -->
+            <div>
+                <div class="flex items-baseline justify-between gap-4 bg-slate-50 px-4 py-3">
+                    <h2 class="text-base font-semibold text-slate-900 tracking-tight">ChatGPT</h2>
+                    <span class="text-xs font-medium text-slate-400 tabular-nums">1 modelo</span>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 px-4 py-4">
+                        <li><a href="https://buscohosting.com/modelo/chatgpt-4o-latest-20250326" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">chatgpt-4o-latest-20250326</a></li>
+                </ul>
+            </div>
+            <!-- Familia: Claude -->
+            <div>
+                <div class="flex items-baseline justify-between gap-4 bg-slate-50 px-4 py-3">
+                    <h2 class="text-base font-semibold text-slate-900 tracking-tight">Claude</h2>
+                    <span class="text-xs font-medium text-slate-400 tabular-nums">26 modelos</span>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 px-4 py-4">
+                        <li><a href="https://buscohosting.com/modelo/claude-3-5-sonnet-20241022" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-3-5-sonnet-20241022</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-3-7-sonnet-20250219" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-3-7-sonnet-20250219</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-3-7-sonnet-20250219-thinking-32k" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-3-7-sonnet-20250219-thinking-32k</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-fable-5" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-fable-5</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-fable-5-1-max" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-fable-5-1-max</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-haiku-4-5-20251001" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-haiku-4-5-20251001</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-1-20250805" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-1-20250805</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-1-20250805-thinking-16k" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-1-20250805-thinking-16k</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-20250514" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-20250514</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-20250514-thinking-16k" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-20250514-thinking-16k</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-5-20251101" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-5-20251101</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-5-20251101-high-32k" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-5-20251101-high-32k</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-6" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-6</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-6-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-6-high</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-7" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-7</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-7-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-7-high</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-8" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-8</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-4-8-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-4-8-high</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-5-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-5-high</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-opus-5-max" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-opus-5-max</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-sonnet-4-20250514" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-sonnet-4-20250514</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-sonnet-4-20250514-thinking-32k" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-sonnet-4-20250514-thinking-32k</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-sonnet-4-5-20250929" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-sonnet-4-5-20250929</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-sonnet-4-5-20250929-high-32k" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-sonnet-4-5-20250929-high-32k</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-sonnet-4-6" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-sonnet-4-6</a></li>
+                        <li><a href="https://buscohosting.com/modelo/claude-sonnet-5-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">claude-sonnet-5-high</a></li>
+                </ul>
+            </div>
+            <!-- Familia: Command -->
+            <div>
+                <div class="flex items-baseline justify-between gap-4 bg-slate-50 px-4 py-3">
+                    <h2 class="text-base font-semibold text-slate-900 tracking-tight">Command</h2>
+                    <span class="text-xs font-medium text-slate-400 tabular-nums">1 modelo</span>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 px-4 py-4">
+                        <li><a href="https://buscohosting.com/modelo/command-a-03-2025" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">command-a-03-2025</a></li>
+                </ul>
+            </div>
+            <!-- Familia: DeepSeek -->
+            <div>
+                <div class="flex items-baseline justify-between gap-4 bg-slate-50 px-4 py-3">
+                    <h2 class="text-base font-semibold text-slate-900 tracking-tight">DeepSeek</h2>
+                    <span class="text-xs font-medium text-slate-400 tabular-nums">17 modelos</span>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 px-4 py-4">
+                        <li><a href="https://buscohosting.com/modelo/deepseek-r1" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-r1</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-r1-0528" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-r1-0528</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v3" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v3</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v3-0324" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v3-0324</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v3-1" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v3-1</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v3-1-terminus" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v3-1-terminus</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v3-1-terminus-thinking" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v3-1-terminus-thinking</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v3-1-thinking" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v3-1-thinking</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v3-2" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v3-2</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v3-2-exp" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v3-2-exp</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v3-2-exp-thinking" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v3-2-exp-thinking</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v3-2-thinking" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v3-2-thinking</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v4-flash" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v4-flash</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v4-flash-high-preview" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v4-flash-high-preview</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v4-pro" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v4-pro</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v4-pro-high-20260813" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v4-pro-high-20260813</a></li>
+                        <li><a href="https://buscohosting.com/modelo/deepseek-v4-pro-high-preview" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">deepseek-v4-pro-high-preview</a></li>
+                </ul>
+            </div>
+            <!-- Familia: Dola -->
+            <div>
+                <div class="flex items-baseline justify-between gap-4 bg-slate-50 px-4 py-3">
+                    <h2 class="text-base font-semibold text-slate-900 tracking-tight">Dola</h2>
+                    <span class="text-xs font-medium text-slate-400 tabular-nums">1 modelo</span>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 px-4 py-4">
+                        <li><a href="https://buscohosting.com/modelo/dola-seed-2-0-pro" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">dola-seed-2-0-pro</a></li>
+                </ul>
+            </div>
+            <!-- Familia: Ernie -->
+            <div>
+                <div class="flex items-baseline justify-between gap-4 bg-slate-50 px-4 py-3">
+                    <h2 class="text-base font-semibold text-slate-900 tracking-tight">Ernie</h2>
+                    <span class="text-xs font-medium text-slate-400 tabular-nums">4 modelos</span>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 px-4 py-4">
+                        <li><a href="https://buscohosting.com/modelo/ernie-5-0-0110" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">ernie-5-0-0110</a></li>
+                        <li><a href="https://buscohosting.com/modelo/ernie-5-0-preview-1022" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">ernie-5-0-preview-1022</a></li>
+                        <li><a href="https://buscohosting.com/modelo/ernie-5-0-preview-1203" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">ernie-5-0-preview-1203</a></li>
+                        <li><a href="https://buscohosting.com/modelo/ernie-5-1" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">ernie-5-1</a></li>
+                </ul>
+            </div>
+            <!-- Familia: Gemini -->
+            <div>
+                <div class="flex items-baseline justify-between gap-4 bg-slate-50 px-4 py-3">
+                    <h2 class="text-base font-semibold text-slate-900 tracking-tight">Gemini</h2>
+                    <span class="text-xs font-medium text-slate-400 tabular-nums">18 modelos</span>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 px-4 py-4">
+                        <li><a href="https://buscohosting.com/modelo/gemini-2-0-flash-001" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-2-0-flash-001</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-2-0-flash-lite-preview-02-05" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-2-0-flash-lite-preview-02-05</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-2-5-flash" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-2-5-flash</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-2-5-flash-lite-preview-06-17-thinking" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-2-5-flash-lite-preview-06-17-thinking</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-2-5-flash-lite-preview-09-2025-no-thinking" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-2-5-flash-lite-preview-09-2025-no-thinking</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-2-5-flash-preview-09-2025" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-2-5-flash-preview-09-2025</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-2-5-pro" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-2-5-pro</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-3-1-flash-lite-preview" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-3-1-flash-lite-preview</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-3-1-pro-preview" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-3-1-pro-preview</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-3-5-flash-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-3-5-flash-high</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-3-5-flash-lite" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-3-5-flash-lite</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-3-5-flash-medium" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-3-5-flash-medium</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-3-6-flash-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-3-6-flash-high</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-3-7-flash-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-3-7-flash-high</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-3-8-flash-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-3-8-flash-high</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-3-flash" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-3-flash</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-3-flash-thinking-minimal" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-3-flash-thinking-minimal</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemini-3-pro" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemini-3-pro</a></li>
+                </ul>
+            </div>
+            <!-- Familia: Gemma -->
+            <div>
+                <div class="flex items-baseline justify-between gap-4 bg-slate-50 px-4 py-3">
+                    <h2 class="text-base font-semibold text-slate-900 tracking-tight">Gemma</h2>
+                    <span class="text-xs font-medium text-slate-400 tabular-nums">3 modelos</span>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 px-4 py-4">
+                        <li><a href="https://buscohosting.com/modelo/gemma-3-27b-it" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemma-3-27b-it</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemma-4-26b-a4b" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemma-4-26b-a4b</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gemma-4-31b" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gemma-4-31b</a></li>
+                </ul>
+            </div>
+            <!-- Familia: GLM -->
+            <div>
+                <div class="flex items-baseline justify-between gap-4 bg-slate-50 px-4 py-3">
+                    <h2 class="text-base font-semibold text-slate-900 tracking-tight">GLM</h2>
+                    <span class="text-xs font-medium text-slate-400 tabular-nums">13 modelos</span>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 px-4 py-4">
+                        <li><a href="https://buscohosting.com/modelo/glm-4-5" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-4-5</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-4-5-air" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-4-5-air</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-4-5v" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-4-5v</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-4-6" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-4-6</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-4-6v" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-4-6v</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-4-7" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-4-7</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-4-7-flash" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-4-7-flash</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-5" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-5</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-5-1" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-5-1</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-5-2-max" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-5-2-max</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-5-3-flash" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-5-3-flash</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-5-3-max" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-5-3-max</a></li>
+                        <li><a href="https://buscohosting.com/modelo/glm-5v-turbo" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">glm-5v-turbo</a></li>
+                </ul>
+            </div>
+            <!-- Familia: GPT -->
+            <div>
+                <div class="flex items-baseline justify-between gap-4 bg-slate-50 px-4 py-3">
+                    <h2 class="text-base font-semibold text-slate-900 tracking-tight">GPT</h2>
+                    <span class="text-xs font-medium text-slate-400 tabular-nums">12 modelos</span>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 px-4 py-4">
+                        <li><a href="https://buscohosting.com/modelo/gpt-4-1-2025-04-14" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-4-1-2025-04-14</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gpt-4-1-mini-2025-04-14" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-4-1-mini-2025-04-14</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gpt-4-5-preview-2025-02-27" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-4-5-preview-2025-02-27</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gpt-5-1" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-5-1</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gpt-5-1-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-5-1-high</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gpt-5-2" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-5-2</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gpt-5-2-chat-latest-20260210" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-5-2-chat-latest-20260210</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gpt-5-2-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-5-2-high</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gpt-5-3-chat-latest" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-5-3-chat-latest</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gpt-5-4" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-5-4</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gpt-5-4-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-5-4-high</a></li>
+                        <li><a href="https://buscohosting.com/modelo/gpt-5-4-mini-high" class="block py-1 text-sm font-medium text-slate-600 hover:text-[#0D9488] transition-colors truncate">gpt-5-4-mini-high</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-3 text-sm text-slate-500">
+            Listado parcial: <span class="font-medium text-slate-700 tabular-nums">100 de 201 modelos</span> publicados en el directorio.
+        </p>
+    </section>
+
+</main>
     </main>
 
 <footer class="bg-white border-t border-slate-100 pt-14 pb-8">
