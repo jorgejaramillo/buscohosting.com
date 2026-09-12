@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://buscohosting.com/modelo/item-model-sitemap.xml
